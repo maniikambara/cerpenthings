@@ -35,3 +35,79 @@ Proyek ini bertujuan untuk:
 ### Library yang diperlukan:
 ```bash
 pip install requests beautifulsoup4 pandas sastrawi scikit-learn
+```
+
+### Langkah-Langkah Instalasi:
+
+#### Clone repositori:
+```bash
+git clone https://github.com/maniikambara/cerpenthings.git
+cd cerpen-scraper-analysis
+```
+
+#### Siapkan file kamus eksternal:
+Unduh stopwords-id.txt, kbbi.txt, dan colloquial-indonesian-lexicon.txt.
+Simpan file-file tersebut di direktori utama proyek.
+
+## 🚀 Cara Penggunaan
+
+### 1. Jalankan Web Scraping (Mengumpulkan cerpen):
+```bash
+python scraping_web.py
+```
+Hasil disimpan di folder cerpen/.
+
+### 2. Preprocessing Teks:
+```bash
+python preprocessing.py
+```
+Hasil preprocessing disimpan di cerpen_preprocessed.csv.
+
+### 3. Analisis Kategori:
+```bash
+python analisis.py
+```
+Hasil analisis disimpan di hasil_analisis_tfidf.csv dan cosine_similarity_matrix.csv.
+
+## 📂 Struktur Proyek
+```bash
+cerpen-scraper-analysis/
+├── cerpen/                   # Folder hasil scraping cerpen
+├── scraping_web.py           # Script scraping web
+├── preprocessing.py          # Script preprocessing teks
+├── analisis.py               # Script analisis kategori
+├── kamus.py                  # Load kamus (stopwords, KBBI, dll)
+├── kbbi.txt                  # Kamus KBBI
+├── stopwords-id.txt          # Daftar stopwords Bahasa Indonesia
+├── colloquial-indonesian-lexicon.txt  # Kamus kata tidak baku
+├── cerpen_preprocessed.csv   # Data teks setelah preprocessing
+└── hasil_analisis_tfidf.csv  # Hasil klasifikasi kategori
+```
+
+## 📊 Metode Analisis
+
+### 1. Klasifikasi Berbasis Kata Kunci:
+
+#### Setiap kategori memiliki daftar kata kunci (misalnya, "horor" → "hantu", "kuburan").
+
+#### Hitung kemunculan kata kunci dalam teks untuk menentukan kategori.
+
+### 2. Klasifikasi dengan TF-IDF & Cosine Similarity:
+
+#### Transformasi teks ke vektor TF-IDF.
+
+#### Hitung kemiripan dengan vektor referensi kategori menggunakan cosine similarity.
+
+## 📌 Sumber Data
+
+## Daftar Stopwords: stopwords-id
+
+## Stemmer Bahasa Indonesia: Sastrawi
+
+## Kamus Kata Tidak Baku: colloquial-indonesian-lexicon
+
+## Kamus KBBI: kumpulan-kata-bahasa-indonesia-KBBI
+
+## 📜 Lisensi
+
+### Proyek ini dilisensikan di bawah MIT License.
