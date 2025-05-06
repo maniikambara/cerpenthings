@@ -100,13 +100,13 @@ cerpen-scraper-analysis/
 
 ## 📌 Sumber Data
 
-## Daftar Stopwords: stopwords-id
+### Daftar Stopwords: stopwords-id
 
-## Stemmer Bahasa Indonesia: Sastrawi
+### Stemmer Bahasa Indonesia: Sastrawi
 
-## Kamus Kata Tidak Baku: colloquial-indonesian-lexicon
+### Kamus Kata Tidak Baku: colloquial-indonesian-lexicon
 
-## Kamus KBBI: kumpulan-kata-bahasa-indonesia-KBBI
+### Kamus KBBI: kumpulan-kata-bahasa-indonesia-KBBI
 
 ## 📜 Lisensi
 
