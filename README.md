@@ -42,7 +42,7 @@ pip install requests beautifulsoup4 pandas sastrawi scikit-learn
 #### Clone repositori:
 ```bash
 git clone https://github.com/maniikambara/cerpenthings.git
-cd cerpen-scraper-analysis
+cd cerpenthings
 ```
 
 #### Siapkan file kamus eksternal:
